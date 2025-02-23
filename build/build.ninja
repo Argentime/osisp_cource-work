@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: MyCProject
+# Project: Dirwalk
 # Configurations: Debug
 # =============================================================================
 
@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_dirwalk: phony || .
 
 build CMakeFiles/dirwalk.dir/main.c.o: C_COMPILER__dirwalk_unscanned_Debug /home/alex/Документы/osisp/OSISP/src/main.c || cmake_object_order_depends_target_dirwalk
   DEP_FILE = CMakeFiles/dirwalk.dir/main.c.o.d
-  FLAGS = -g
+  FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles/dirwalk.dir
   OBJECT_FILE_DIR = CMakeFiles/dirwalk.dir
 

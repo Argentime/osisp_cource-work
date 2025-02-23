@@ -743,7 +743,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "MyCProject"
+			"value" : "Dirwalk"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1042,6 +1042,42 @@
 			"value" : "FALSE"
 		},
 		{
+			"name" : "Dirwalk_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/alex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/osisp/OSISP/build"
+		},
+		{
+			"name" : "Dirwalk_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Dirwalk_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/alex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/osisp/OSISP/src"
+		},
+		{
 			"name" : "MyCProject_BINARY_DIR",
 			"properties" : 
 			[
@@ -1100,6 +1136,42 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "dirwalk_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/alex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/osisp/OSISP/build"
+		},
+		{
+			"name" : "dirwalk_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "dirwalk_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/alex/\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b/osisp/OSISP/src"
 		}
 	],
 	"kind" : "cache",
