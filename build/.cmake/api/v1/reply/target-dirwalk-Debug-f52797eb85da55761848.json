@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "my_app"
+			"path" : "dirwalk"
 		}
 	],
 	"backtrace" : 1,
@@ -45,7 +45,7 @@
 			]
 		}
 	],
-	"id" : "my_app::@6890427a1f51a3e7e1df",
+	"id" : "dirwalk::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +61,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "my_app",
-	"nameOnDisk" : "my_app",
+	"name" : "dirwalk",
+	"nameOnDisk" : "dirwalk",
 	"paths" : 
 	{
 		"build" : ".",

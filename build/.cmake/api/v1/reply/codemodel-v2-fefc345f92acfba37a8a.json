@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "my_app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-my_app-Debug-1769ecd7c217f20a7c7f.json",
-					"name" : "my_app",
+					"id" : "dirwalk::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dirwalk-Debug-f52797eb85da55761848.json",
+					"name" : "dirwalk",
 					"projectIndex" : 0
 				}
 			]
