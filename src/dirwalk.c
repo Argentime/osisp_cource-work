@@ -19,7 +19,7 @@ void dirwalk(const char *dir, int show_links, int show_dirs, int show_files, int
     struct dirent *entry;
     struct stat statbuf;
     Entry *entries = NULL;
-    size_t count = 0, capacity = 0;
+    unsigned int count = 0, capacity = 0;
 
     if (!(dp = opendir(dir)))
     {
