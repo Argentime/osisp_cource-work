@@ -55,6 +55,12 @@ build CMakeFiles/dirwalk.dir/main.c.o: C_COMPILER__dirwalk_unscanned_Debug /home
   OBJECT_DIR = CMakeFiles/dirwalk.dir
   OBJECT_FILE_DIR = CMakeFiles/dirwalk.dir
 
+build CMakeFiles/dirwalk.dir/dirwalk.c.o: C_COMPILER__dirwalk_unscanned_Debug /home/alex/Документы/osisp/OSISP/src/dirwalk.c || cmake_object_order_depends_target_dirwalk
+  DEP_FILE = CMakeFiles/dirwalk.dir/dirwalk.c.o.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles/dirwalk.dir
+  OBJECT_FILE_DIR = CMakeFiles/dirwalk.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target dirwalk
@@ -63,7 +69,7 @@ build CMakeFiles/dirwalk.dir/main.c.o: C_COMPILER__dirwalk_unscanned_Debug /home
 #############################################
 # Link the executable dirwalk
 
-build dirwalk: C_EXECUTABLE_LINKER__dirwalk_Debug CMakeFiles/dirwalk.dir/main.c.o
+build dirwalk: C_EXECUTABLE_LINKER__dirwalk_Debug CMakeFiles/dirwalk.dir/main.c.o CMakeFiles/dirwalk.dir/dirwalk.c.o
   DEP_FILE = CMakeFiles/dirwalk.dir/link.d
   FLAGS = -g
   LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/dirwalk.dir/link.d

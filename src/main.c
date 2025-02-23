@@ -1,5 +1,6 @@
 #define _POSIX_C_SOURCE 200809L // стандарт posix
 #include "header/libs.h"
+#include "header/dirwalk.h"
 
 int main(int argc, char *argv[])
 {
