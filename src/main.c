@@ -1,6 +1,6 @@
-#define _POSIX_C_SOURCE 200809L // стандарт posix
 #include "header/libs.h"
 #include "header/dirwalk.h"
+
 
 void parse_option(char opt, int *show_links, int *show_dirs, int *show_files, int *sort)
 {
@@ -42,29 +42,17 @@ int main(int argc, char *argv[])
     if (optind < argc && argv[optind][0] != '-')
     {
         start_dir = argv[optind];
-        optind++; // Перемещаем указатель после каталога
-    }
-
-    // Второй проход: обработка опций после каталога
-    while (optind < argc)
-    {
-        if (argv[optind][0] == '-')
-        {
-            // Ручной разбор опций после каталога
-            for (int i = 1; argv[optind][i] != '\0'; i++)
-            {
-                parse_option(argv[optind][i], &show_links, &show_dirs, &show_files, &sort);
-            }
-        }
-        else
-        {
-            fprintf(stderr, "Error: Multiple directories specified\n");
-            exit(EXIT_FAILURE);
-        }
         optind++;
     }
-
-    printf("%s\n", start_dir);
+    
+    while ((opt = getopt(argc, argv, "ldfs")) != -1)
+    {
+        parse_option(opt, &show_links, &show_dirs, &show_files, &sort);
+    }
+    if ((!show_links && !show_dirs && !show_files) || show_dirs)
+    {
+        printf("%s\n", start_dir);
+    }
     dirwalk(start_dir, show_links, show_dirs, show_files, sort);
     return 0;
 }
