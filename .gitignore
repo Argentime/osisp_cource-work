@@ -1,13 +1,33 @@
-CMakeLists.txt.user
+# Сгенерированные файлы CMake
+build/
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
+CMakeFiles/
 cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
-CMakeUserPresets.json
-osisp.code-workspace
+Makefile
+# Исполняемые файлы и объектные файлы
+*.o
+*.out
+*.exe
+# Временные файлы и резервные копии
+*~
+*.swp
+*.bak
+# Файлы Visual Studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.pdb
+*.ilk
+*.exp
+*.lib
+.vs/         # Папка с настройками Visual Studio
+Debug/
+Release/
+# Файлы Visual Studio Code
+.vscode/     # Настройки VS Code (если используешь)
+# Локальные файлы WSL
+*.wslconfig
+# Логи и другие временные файлы
+*.log
