@@ -22,7 +22,6 @@ Makefile
 *.ilk
 *.exp
 *.lib
-.vs/         # Папка с настройками Visual Studio
 Debug/
 Release/
 # Файлы Visual Studio Code
@@ -31,3 +30,5 @@ Release/
 *.wslconfig
 # Логи и другие временные файлы
 *.log
+/.vs
+/src/.vs
