@@ -21,5 +21,5 @@ std::string ExternalTool::getLastError() const {
 }
 
 bool ExternalTool::isAvailable() const {
-    return true; // Пока заглушка, позже можно проверить наличие утилиты
+    return true;
 }

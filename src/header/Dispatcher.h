@@ -3,29 +3,32 @@
 
 #include "FileTask.h"
 #include "ExternalTool.h"
+#include "ThreadPool.h"
 #include <vector>
+#include <string>
+#include <memory>
 
 class Dispatcher {
 public:
     Dispatcher();
-    ~Dispatcher() = default;
+    ~Dispatcher();
 
-    // Управление задачами
-    void addTask(const FileTask& task);
-    void runTasks();            // Запускает задачи
-    void clearTasks();          // Очищает список задач
-
-    // Информация
+    void addTask(FileTask&& task);
+    void runTasks();
+    void clearTasks();
     size_t getTaskCount() const;
     size_t getCompletedCount() const;
-
-    // Настройки
-    void setMaxThreads(int maxThreads); // Устанавливает максимум потоков
+    void setMaxThreads(int maxThreads);
+    std::string getTaskList() const;
+    std::string getSummary() const;
+    bool tasksCompleted() const;
 
 private:
     std::vector<FileTask> tasks_;
-    ExternalTool tool_;         // Общий инструмент для всех задач
-    int maxThreads_;            // Максимальное число потоков
+    ExternalTool tool_;
+    int maxThreads_;
+    std::unique_ptr<ThreadPool> threadPool_;
+    bool isThreadPoolActive() const; // Новый метод
 };
 
 #endif // DISPATCHER_H

@@ -8,12 +8,12 @@ public:
     ExternalTool();
     ~ExternalTool() = default;
 
-    void run(const std::string& command) const; // Запускает команду
-    std::string getLastError() const;           // Возвращает последнюю ошибку
-    bool isAvailable() const;                   // Проверяет доступность инструмента
+    void run(const std::string& command) const;
+    std::string getLastError() const;
+    bool isAvailable() const;
 
 private:
-    mutable std::string lastError_; // Последняя ошибка (mutable для const методов)
+    mutable std::string lastError_;
 };
 
 #endif // EXTERNAL_TOOL_H
