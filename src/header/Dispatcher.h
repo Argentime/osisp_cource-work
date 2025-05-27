@@ -1,18 +1,23 @@
 #ifndef DISPATCHER_H
 #define DISPATCHER_H
 
+#include <vector>
+#include <memory>
 #include "FileTask.h"
 #include "ExternalTool.h"
 #include "ThreadPool.h"
-#include <vector>
-#include <string>
-#include <memory>
 
 class Dispatcher {
+private:
+    std::vector<FileTask> tasks_;
+    ExternalTool tool_;
+    int maxThreads_;
+    std::unique_ptr<ThreadPool> threadPool_;
+    bool isThreadPoolActive() const;
+
 public:
     Dispatcher();
     ~Dispatcher();
-
     void addTask(FileTask&& task);
     void runTasks();
     void clearTasks();
@@ -22,13 +27,7 @@ public:
     std::string getTaskList() const;
     std::string getSummary() const;
     bool tasksCompleted() const;
-
-private:
-    std::vector<FileTask> tasks_;
-    ExternalTool tool_;
-    int maxThreads_;
-    std::unique_ptr<ThreadPool> threadPool_;
-    bool isThreadPoolActive() const; // Новый метод
+    ExternalTool* getTool(); // Новый метод для доступа к tool_
 };
 
-#endif // DISPATCHER_H
+#endif
