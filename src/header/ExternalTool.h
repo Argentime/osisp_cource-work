@@ -10,8 +10,8 @@ private:
 
 public:
     ExternalTool();
-    void run(std::string command); // Убрано const
-    std::string runWithOutput(std::string command); // Убрано const
+    void run(std::string command);
+    std::string runWithOutput(std::string command); 
     std::string getLastError() const;
     bool isAvailable() const;
 };

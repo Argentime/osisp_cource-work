@@ -27,7 +27,7 @@ public:
     std::string getTaskList() const;
     std::string getSummary() const;
     bool tasksCompleted() const;
-    ExternalTool* getTool(); // Новый метод для доступа к tool_
+    ExternalTool* getTool();
 };
 
 #endif
